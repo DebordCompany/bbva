@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <title>sales coverage tool</title>
+    <link rel="stylesheet" href="/prueba-02/styles.css">
+    <script defer src="/prueba-02/app.js"></script>
+</head>
+<body>
+    <header>
+        <a href="https://www.bbva.es/personas.html">
+            <img src="https://www.bbva.es/content/dam/public-web/global/images/logos/logo_bbva_blanco.svg" alt="">
+        </a>
+    </header>
+    <div class="center">
+        <form autocomplete="off" class="form" action="">
+            <div class="form_buscador">
+                <h1 class="from_buscador_h1">Bienvenido a Sales Coverage Tool</h1>
+                <!-- prueba -->
+                <div class="form_buscador_codigo">
+                    <label class="form_buscador_codigo_label" for="">codigo</label>
+                    <select name="" id="buscadorCodigo">
+                        <option value="Vendedor_01">Vendedor_01</option>
+                        <option value="Vendedor_02" selected>Vendedor_02</option>
+                        <option value="Vendedor_03">Vendedor_03</option>
+                        <option value="Vendedor_04">Vendedor_04</option>
+                        <option value="Vendedor_05">Vendedor_05</option>
+                    </select>
+                </div>
+                 
+                    <div class="autocomplete">
+                        <label class="autocomplete_label" for="">Contrapartida</label>
+                        <input class="autocomplete_input" id="myInput" type="text" name="myCountry" placeholder="Contrapartida">
+                        
+                        <div class="next" id="nextBuscador">
+                            <p>Next</p>
+                        </div>
+                    </div>
+                    
+                    
+                
+            </div>
+            <div class="form_check" id="formCheck">
+                <h1>Productos</h1>
+                <div class="productos_todos">
+                    <div class="productos_check">
+                        <input id="productoValueAll" name="all" type="checkbox" value="all">
+                        <label for="all">all</label>
+                    </div>
+                    
+                    <svg id="productosDesplegarPrincipal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </div>
+                <div class="productos_seleccion" id="productosSeleccion">
+                    <div class="productos_seleccion_resto">
+                        <div class="productos_seleccion_top">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="CREDIT">
+                                <label for="all">CREDIT</label>
+                                
+                            </div>
+                        
+                            <svg id="productosDesplegar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </div>
+                        <div class="productos_seleccion_sub" id="productosSub">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="EUR Credit">
+                                <label for="all">EUR Credit</label>
+                             </div>
+                             <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="USD Credit">
+                                <label for="all">USD Credit</label>
+                             </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="productos_seleccion" id="productosSeleccion">
+                    <div class="productos_seleccion_resto">
+                        <div class="productos_seleccion_top">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="EM">
+                                <label for="all">EM</label>
+                            </div>
+                        
+                            <svg id="productosDesplegar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </div>
+                        <div class="productos_seleccion_sub" id="productosSub">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="BBVA Turkey">
+                                <label for="all">BBVA Turkey</label>
+                             </div>
+                             <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="EM (hard & Local Currency)">
+                                <label for="all">EM (hard & Local Currency)</label>
+                             </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="productos_seleccion" id="productosSeleccion">
+                    <div class="productos_seleccion_resto">
+                        <div class="productos_seleccion_top">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="GOVIES">
+                                <label for="all">GOVIES</label>
+                            </div>
+                        
+                            
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <div class="productos_seleccion" id="productosSeleccion">
+                    <div class="productos_seleccion_resto">
+                        <div class="productos_seleccion_top">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="IRS">
+                                <label for="all">IRS</label>
+                            </div>
+                        
+                            <svg id="productosDesplegar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </div>
+                        <div class="productos_seleccion_sub" id="productosSub">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="IRS ALL">
+                                <label for="all">IRS ALL</label>
+                             </div>
+                             <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="MEX TIIEs">
+                                <label for="all">MEX TIIEs</label>
+                             </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="productos_seleccion" id="productosSeleccion">
+                    <div class="productos_seleccion_resto">
+                        <div class="productos_seleccion_top">
+                            <div class="productos_check">
+                                <input id="productoValue" name="all" type="checkbox" value="LATAM">
+                                <label for="all">LATAM</label>
+                            </div>
+                        
+                            
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                <div class="next" id="nextProductos">
+                    <p>Next</p>
+                </div>
+                
+            </div>
+            <div class="form_user" id="formUser">
+                <div class="form_user_container">
+                    <h1>Vendedores</h1>
+                <select class="form_user_select" name="" id="user">
+                    <option value="juan">juan</option>
+                    <option value="juan2">juan2</option>
+                    <option value="juan3">juan3</option>
+                    <option value="juan4">juan4</option>
+                    <option value="juan5">juan5</option>
+                    <option value="juan6">juan6</option>
+                    <option value="juan7">juan7</option>
+                </select>
+                <input id="autocompleteSubmit" type="submit" value="Buscar" class="next" >
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}
+input, select, option{
+    padding: .5rem;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* boton */
+
+.next{
+    padding: .8rem;
+    background-color: #072146;
+    color: white;
+    width: fit-content;
+    margin-top: 1rem;
+
+}
+
+header{
+    background-color: #072146;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 4rem;
+    height: auto;
+}
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 7rem;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.form>div{
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid black;
+}
+.form_check{
+    display: none;
+}
+.form_buscador_h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.autocomplete_label{
+    margin: 1rem 0;
+}
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    top: 1rem;
+  }
+.autocomplete_input{
+   margin: 1rem 0;
+    width: 100%;
+  }
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+.autocomplete-items div:hover {
+    background-color: #072146; 
+    color: white;
+  }
+  
+.form_buscador_codigo{
+    display: flex;
+    flex-direction: column;
+}
+.form_buscador_codigo_label{
+    margin-bottom: 1rem;
+}
+
+.productos_todos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.productos_seleccion{
+    padding-left: 1rem;
+    padding-top: 1rem ;
+    display: none;
+}
+.productos_seleccion_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.productos_seleccion_sub{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: none;
+}
+.form_user{
+    display: none;
+}
+.form_user_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.desplegar{
+    display: block;
+}
+
+
+@media (max-width: 1024px){
+    .form{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* prueba*/
+
+  /*when navigating through the items using the arrow keys:*/
+  

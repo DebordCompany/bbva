@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+    
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #072146;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 4rem;
+    height: auto;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr  1fr  1fr;
+    max-width: 1300px;
+    padding: 5rem 0rem;
+}
+@media only screen and (max-width: 1024px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+.buscador{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+.buscador_select{
+    width: 100%;
+    padding: .5rem;
+}
+.buscador input{
+    width: 100%;
+    padding: .5rem;
+}
+.buscador_buscar{
+    display: block;
+}
+
+.tabla{
+    padding: 2rem;
+    display: none;
+}
+.tabla_productos{
+    padding: .5rem;
+    border: 1px solid rgb(0, 0, 0);
+}
+.tabla_productos_boton{
+    padding: .3rem 2rem;
+    
+    width: fit-content;
+    border-radius: 1rem;
+    font-weight: lighter;
+    
+}
+.subcontainer{
+    display: none;
+    
+}
+
+.resto{
+    display: none;
+}
+.cuarto{
+    display: none;
+}
+.usuario{
+    padding: 2rem;
+    display: none;
+}
+.usuario_form{
+
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    border: 1px solid black;
+    gap: 2rem;
+}
+.usuario_form input{
+    width: 100%;
+    padding:.5rem;
+}
+.enviar{
+    background-color: transparent;
+    padding: .5rem;
+    border: 1px solid black;
+    width: fit-content; 
+    cursor: pointer;
+}
+.activo{
+display: block;
+}
+.dinamic{
+    max-width: 1300px;
+    width: 100%;
+    padding: 5rem 2rem;
+    display: none;
+    justify-content: center;
+}
+.activo_flex{
+    display: flex;
+}
+table{
+    border: 1px solid black;
+    padding: 1rem;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+tr{
+    border: 1px solid black;
+    padding: 1rem;
+}
+td{
+    border: 1px solid black;
+    padding: 1rem;
+}
